@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявки Школы №777</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Заявки Школы №777</h1>
+    </header>
+    
+    <main>
+        <h2>Оставить заявку</h2>
+        <form action="https://formsubmit.co/school777@mail.ru" method="POST">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Адрес заявки:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="issue">Описание проблемы:</label>
+            <textarea id="issue" name="issue" rows="4" required></textarea>
+
+            <input type="hidden" name="_subject" value="Новая заявка от сотрудника школы №777">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <button type="submit">Отправить заявку</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p>© 2025 Заявки Школы №777</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
